@@ -47,6 +47,10 @@ body {
 
 .header-main {
   background-color: transparent;
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  right: 0;
 }
 
 .header__inner {
@@ -120,24 +124,38 @@ body {
 .top {
   color: white;
   text-align: center;
-  padding-top: 105px;
+  padding-top: 180px;
   padding-bottom: 50px;
-
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  right: 0;
 }
 
 .title {
   padding-bottom: 40px;
-  font-size: 96px;
+  font-size: 64px;
   font-weight: 700;
 }
 
 .top__link {
   background-color: #151515;
-  padding: 23px;
+  padding: 15px;
   max-width: 430px;
   width: 100%;
   display: inline-block;
   text-transform: uppercase;
   font-size: 36px;
   font-weight: 700;
+}
+
+.swiper-wrapper {
+  background: rgba(21,21,21,.3);
+}
+
+.swiper-slide {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 180px;
 }
