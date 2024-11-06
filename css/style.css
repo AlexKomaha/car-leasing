@@ -72,6 +72,10 @@ body {
   font-weight: 700;
 }
 
+.menu__list-link--active {
+  color: #0066FF;
+}
+
 .footer {
   background-color: #151515;
   padding: 30px 0 32px;
@@ -438,4 +442,29 @@ body {
   margin: 0 auto;
   text-align: center;
   display: block;
+}
+
+.choose {
+  padding: 100px 0 150px;
+}
+
+.tabs__btn {
+  padding: 0 150px;
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  padding-bottom: 100px;
+}
+
+.tabs__btn-item {
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.tabs__btn-item-active {
+  color: #0066FF;
 }
