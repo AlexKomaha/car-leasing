@@ -8,12 +8,18 @@ tabItem.forEach(function (element) {
 // Change color of btns in choose cars
 function open(evt) {
   const tabTarget = evt.currentTarget;
+  const button = tabTarget.dataset.button;
 
   tabItem.forEach(function (item) {
     item.classList.remove("tabs__btn-item-active");
-  })
+  });
 
   tabTarget.classList.add("tabs__btn-item-active");
+  tabContent.forEach(function (item) {
+    item.classList.remove("tabs__content-item-active");
+  });
+
+  document.querySelector(`#${button}`).classList.add("tabs__content-item-active");
 }
 
 const swiper = new Swiper(".swiper", {
