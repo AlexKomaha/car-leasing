@@ -588,3 +588,28 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 70px;
+  }
+  .top__link {
+    padding: 16px;
+    max-width: 360px;
+    font-size: 28px;
+  }
+  .swiper-pagination-bullet {
+    width: 60px;
+  }
+  .swiper-pagination-bullet-active {
+    height: 4px;
+  }
+  .video__frame {
+    height: 400px;
+  }
+  .footer__menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
